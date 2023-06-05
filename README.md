@@ -109,10 +109,6 @@ plt.show()
 
 ```python
 velcat_df = velcat_df.drop('velcat_raw', axis=1)
-velcat_df.head(5)
-
-# Write csv
-#velcat_df.to_csv(out_clustered)
 
 ```
 
@@ -248,7 +244,7 @@ velcat_df.head(5)
 
 
 
-Now my clusters are adjusted and writen in a CSV file.
+Now my clusters are adjusted.
 
 ### Assign velocity category to points
 After having the velocity cluster categories, I assign each velocity category to the points (i.e. coordinates of assessed sites). This is a relatively simple step, in which I add the "vel_cat" column to the points coordinates dataset, then transform them into geopackage by getting their x and y from the coordinates.
