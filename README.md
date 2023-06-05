@@ -5,7 +5,7 @@
 This project aims to create and assign elevation and velocity categories to polygons representing saltmarsh and seagrass habitats in intertidal zones of Ria Formosa. Therefore, it involves several important steps to achieve our objectives, such as data manipulation and analysis, geospatial analysis and machine learning. The outcome of this project will be used with the purpose of more accurately estimating the blue carbon stocks in Ria Formosa intertidal vegetation habitats according to their different velocity and elevation categories.
 
 ## Settings and requirements
-The project was built mainly using Python (version 3.10.9) and R (version 4.2.1).
+The project was built in Python (version 3.10.9).
 
 ### Python packages 
 To run this project, ensure that you have the following packages installed in your conda environment:
@@ -21,8 +21,6 @@ import scipy
 import matplotlib.pyplot as plt
 ```
 
-### R packages
-While most of the project was constructed using Python, a few stages were implemented in R to leverage the convenient functionalities provided by some packages, specially "raster", which I was already familiar with. I use the packages <i>raster, ncdf4, stringr, sf, dplyr</i> and <i>rgdal</i>.
 
 ## Data
 
