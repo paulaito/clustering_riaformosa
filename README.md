@@ -31,131 +31,7 @@ The project utilizes 3 primary data sources:
 
 3. Velocity data:
      - Velocity points coordinates: coordinates of point locations, in which the velocity was previously assessed.
-     - Velocity analysis dataset: this is a previously prepared dataset, indicating the frequency of records of each velocity interval in the assessment period, for each point (site_id) - see below.
-
-
-
-```python
-velcat_analysis = "./wordir-carmen/data_velocity/data/velocity_analysis/table_velcat_analysis.csv"
-table_velcat = pd.read_csv(velcat_analysis)
-table_velcat.head(5)
-```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>site_id</th>
-      <th>0-10</th>
-      <th>10-20</th>
-      <th>20-30</th>
-      <th>30-40</th>
-      <th>40-50</th>
-      <th>50-60</th>
-      <th>60-70</th>
-      <th>70-80</th>
-      <th>80-90</th>
-      <th>90-100</th>
-      <th>100-110</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>saltmarsh_low_01.txt</td>
-      <td>2625</td>
-      <td>1080</td>
-      <td>555</td>
-      <td>112</td>
-      <td>19</td>
-      <td>2</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>saltmarsh_low_02.txt</td>
-      <td>4249</td>
-      <td>144</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>saltmarsh_low_03.txt</td>
-      <td>1922</td>
-      <td>1732</td>
-      <td>654</td>
-      <td>85</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>saltmarsh_low_04.txt</td>
-      <td>3031</td>
-      <td>740</td>
-      <td>470</td>
-      <td>150</td>
-      <td>2</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>saltmarsh_low_05.txt</td>
-      <td>2564</td>
-      <td>1496</td>
-      <td>333</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
+     - Velocity analysis dataset: this is a previously prepared dataset, indicating the frequency of records of each velocity interval in the assessment period, for each point id.
 
 
 ## Velocity clusters
@@ -202,7 +78,7 @@ plt.show()
 
 
     
-![png](output_5_0.png)
+![png](output_4_0.png)
     
 
 
@@ -226,7 +102,7 @@ plt.show()
 
 
     
-![png](output_7_0.png)
+![png](output_6_0.png)
     
 
 
@@ -430,7 +306,7 @@ ax2.set_title("Fishgrid dataset")
 
 
     
-![png](output_14_1.png)
+![png](output_13_1.png)
     
 
 
@@ -591,7 +467,7 @@ plt.show()
 
 
     
-![png](output_23_0.png)
+![png](output_22_0.png)
     
 
 
