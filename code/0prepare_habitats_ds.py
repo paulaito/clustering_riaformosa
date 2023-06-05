@@ -66,34 +66,3 @@ sm_low_habitats.to_file(sm_low_out)
 sg_habitats_intertidal.to_file(sg_intertidal_out)
 sg_habitats.to_file(sg_habitats_out)
 sm_habitats.to_file(sm_habitats_out)
-
-
-
-
-
-##### / teste B
-
-
-
-# Concat into one gdf
-#dfs = [sm_habitats, sg_habitats]
-#habitats = gpd.GeoDataFrame(pd.concat(dfs, ignore_index=True))
-#
-## Keep only geometry and habitat_class columns
-#habitat_class = gpd.GeoDataFrame(habitats['habitat_class'])
-##= habitats[['geometry', 'habitat_class']]
-##habitats.index = habitats.index
-#
-## Buffer vector with 0. 
-## This step is important to remove "self-intersection" in features, which raise a problem later on in case it is not solved.
-#habitats = gpd.GeoDataFrame(habitats.buffer(0))
-#
-## The buffering process ends up removing all columns, so we must add 'habitat_class' column back,
-### and rename the geometry column as it was before (i.e. as it must be)
-#habitats['habitat_class'] = habitat_class
-#habitats.index = habitats.index
-#habitats = habitats.rename(columns={0:'geometry'})
-#habitats = gpd.GeoDataFrame(habitats)
-#
-#habitats.to_file(habitats_gpkg)
-#
