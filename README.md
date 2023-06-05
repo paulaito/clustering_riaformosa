@@ -205,7 +205,7 @@ plt.show()
 
 
     
-![png](output_6_0.png)
+![png](figs/output_6_0.png)
     
 
 
@@ -229,7 +229,7 @@ plt.show()
 
 
     
-![png](output_8_0.png)
+![png](figs/output_8_0.png)
     
 
 
@@ -433,7 +433,7 @@ ax2.set_title("Fishgrid dataset")
 
 
     
-![png](output_15_1.png)
+![png](figs/output_15_1.png)
     
 
 
@@ -594,7 +594,7 @@ plt.show()
 
 
     
-![png](output_24_0.png)
+![png](figs/output_24_0.png)
     
 
 
