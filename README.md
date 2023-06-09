@@ -25,7 +25,7 @@ import matplotlib.pyplot as plt
 
 The project utilizes 3 primary data sources:
 
-1. Seagrass and saltmarsh habitats data: a polygon vector data (geopackages) representing seagrass habitats and another polygon vector data representing saltmarsh habitats in Ria Formosa.
+1. Seagrass and saltmarsh habitats data: a polygon vector data representing seagrass habitats and another polygon vector data representing saltmarsh habitats in Ria Formosa.
 
 2. Digital Elevation Model (DEM) raster, with a resolution of 10 x 10 meters. This dataset was provided by the Portuguese General Directorate for Territory (DG Território).
 
@@ -42,7 +42,7 @@ The main steps to obtain velocity categories were:
 - Classify each feature from grid into a velocity cluster according to their spatial proximity.
 
 ### Creating velocity clusters
-The clusters were created using K-Means, which is a popular clustering algorithm that aims to partition a dataset into a predefined number of distinct groups based on the similarity of data points, where each group is represented by its centroid. I choose to create four groups.
+The clusters were created using K-Means, which is a popular clustering algorithm that aims to partition a dataset into a predefined number of distinct groups based on the similarity of data points, where each group is represented by its centroid. I choose to create three groups.
 
 
 ```python
@@ -82,7 +82,7 @@ plt.show()
     
 
 
-Notice that the clusters have been created, but the numbers of the labels may cause confusion. I want the cluster labels to be in ascending order of velocity: cluster 1 having lowest speed intervals and cluster 4 having the highest.
+Notice that the clusters have been created, but the numbers of the labels may cause confusion. I want the cluster labels to be in ascending order of velocity: cluster 1 having lowest speed intervals and cluster 3 having the highest.
 
 
 ```python
